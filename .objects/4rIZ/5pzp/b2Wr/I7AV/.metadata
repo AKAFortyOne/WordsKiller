@@ -1,0 +1,13 @@
+﻿{
+  "Name": " RhF",
+  "Type": "Element",
+  "Id": "I7AV2OYrA0uq5Uqz6NqtZg",
+  "Reference": "bs-iXhSw2k-YhXge2Cel2A/I7AV2OYrA0uq5Uqz6NqtZg",
+  "ParentRef": "bs-iXhSw2k-YhXge2Cel2A/b2Wrm_h9L0-KulCCmvyixg",
+  "Created": "2025-04-13T08:27:22.170787Z",
+  "Updated": "2025-04-13T08:27:22.170787Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fSA6j4OcB0yEOzODUyEHsA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" CvElementArea="374, 422, 19, 20" CvType="Icon" DesignTimeRectangle="373, 417, 22, 31" DesignTimeScaleFactor="1" Guid="9c5a72b1-7525-4760-b087-4b7cd864c5ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAfCAYAAADjuz3zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVEhL7dBBCsAgDERRT5v736DiJsiQsdNiu5B5kI3BD9qujzQ82MXh5HCi4YgoR1WGMYajoGFmtZs9DqvkMH7H3bdIYYzhVOQww3b/h+dnsssD25VhxC4PbHdweDUVKfyGw8nh5HDqqv018QhwrvsAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" CvElementArea="410, 422, 20, 20" CvType="Icon" DesignTimeRectangle="409, 421, 22, 23" ElementType="Icon" Guid="39d5bc51-4006-4944-a1ef-f0151cb60e0f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVEhL7ZTtDYAgDESdlmnYhmmYRnMkZ4hcCwb4Y3xJEz/gtVLhODdxPB+s4oPinHOJlFIJXI/giiEKIZwxxjtwj8A7D1NMkaqQCb0vkGIMxsQerF4hxRhsVUKYfFg8Wm2PRox1w9rO0ojfgiLUHyLFvfWtsfohxWyKmlDj9cMVe1BqJZdibmFrh1HqNVmKCeWULNnST5YeQjP84ptt4gs2M5OEuDKDbQAAAABJRU5ErkJggg==" SearchSteps="Image, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="04c98116e92cf3ea1942338c31e388d1.png" xmlns="">0lJ8bXRlJP02spp0QwDnE3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

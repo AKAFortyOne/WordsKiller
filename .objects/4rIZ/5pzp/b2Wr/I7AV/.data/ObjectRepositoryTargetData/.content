@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="m-1FlbqfjUW5e3bWVua18g" Reference="bs-iXhSw2k-YhXge2Cel2A/I7AV2OYrA0uq5Uqz6NqtZg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="48ac2fe8-15e1-42d4-afc5-0bf502889d00" DesignTimeRectangle="69, 57, 84, 38" DesignTimeScaleFactor="1" Guid="559f3feb-8e62-4685-b986-e100c1308208" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAmCAYAAABagbwLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVGhD7dJRCsMwDIPhXbP3P8hGHwpGxHbKJNMxfVDWzMkgP3u9jeqFX9h3HJTMQckclMxByRyUzEHJHJTMQckclMxByRyU7OeCHseBX7XOM/FRGg26exkMEM9lv4H7V2cnjAW9cznctxN05c5eltGg8bOCe+JZfCrdXGEkKF4M1wijxf3V++6jJA1aXaCbZevsfaWbK8iCdv+Iah5nuCd7X+nmCrKgEV4M1wjnWcTrHePvPCojQU/x8h3cE9fZ+0o3V3h0UPxX4Vlco26uMBb0tHPBLN41q9aomys8Lmgmnu2iV3O10aD/wEHJHJTMQckclMxByRyUzEHJHJTMQckclMxByRyU7APLurQNAcirpgAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="df40cc424350795e9a5a909167ac4de2.png" xmlns="">08nqS2lxfnUmZhpz27i3rQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

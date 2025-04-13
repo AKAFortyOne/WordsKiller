@@ -1,0 +1,326 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1290,3719" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="AnkiTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[AnkiTable]" DisplayName="构建数据表" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Words&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Mnemonic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Meaning&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="读取 CSV" sap:VirtualizedContainerService.HintSize="574,172" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IgnoreQuotes="True" PathResource="[LocalResource.FromPath(&quot;cet4+6.csv&quot;)]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="对于数据表中的每一行" sap:VirtualizedContainerService.HintSize="574,3133" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowWord" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="572,2949" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="CurrentWord" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="538,116" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[CurrentWord]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentRowWord("Words").ToString()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Cherry Studio" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="538,2773" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0fbd8341-4439-459f-a827-77057e030841" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="504,2479" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                      <Variable x:TypeArguments="x:String" Name="MnemonicAndMeaning" />
+                      <Variable x:TypeArguments="s:String[]" Name="SplitParts" />
+                      <Variable x:TypeArguments="x:String" Name="Meaning" />
+                      <Variable x:TypeArguments="x:String" Name="Mnemonic" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 '&lt;&gt; RhF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,191" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="48ac2fe8-15e1-42d4-afc5-0bf502889d00" ContentHash="m-1FlbqfjUW5e3bWVua18g" DesignTimeRectangle="69, 57, 84, 38" DesignTimeScaleFactor="1" Guid="559f3feb-8e62-4685-b986-e100c1308208" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAmCAYAAABagbwLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVGhD7dJRCsMwDIPhXbP3P8hGHwpGxHbKJNMxfVDWzMkgP3u9jeqFX9h3HJTMQckclMxByRyUzEHJHJTMQckclMxByRyU7OeCHseBX7XOM/FRGg26exkMEM9lv4H7V2cnjAW9cznctxN05c5eltGg8bOCe+JZfCrdXGEkKF4M1wijxf3V++6jJA1aXaCbZevsfaWbK8iCdv+Iah5nuCd7X+nmCrKgEV4M1wjnWcTrHePvPCojQU/x8h3cE9fZ+0o3V3h0UPxX4Vlco26uMBb0tHPBLN41q9aomys8Lmgmnu2iV3O10aD/wEHJHJTMQckclMxByRyUzEHJHJTMQckclMxByRyU7APLurQNAcirpgAAAABJRU5ErkJggg==" InformativeScreenshot="df40cc424350795e9a5a909167ac4de2.png" Reference="bs-iXhSw2k-YhXge2Cel2A/I7AV2OYrA0uq5Uqz6NqtZg" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''️单词记忆''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,191" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="deb958c2-1b37-4b42-8929-e6731242cabf" CvTextArea="106, 722, 55, 15" CvTextArgument="ÈAìììZłZ" CvType="Text" DesignTimeRectangle="107, 719, 52, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='️单词记忆' role='push button' /&gt;&lt;ctrl name='⭐ ️单词记忆' role='grouping' /&gt;&lt;ctrl role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='️单词记忆' role='push button' /&gt;&lt;ctrl name='⭐ ️单词记忆' role='grouping' /&gt;&lt;ctrl role='grouping' automationid='' check:text='️单词记忆' /&gt;" Guid="22a97fbf-f50b-4d1c-ae50-4762d27d9ea8" InformativeScreenshot="3a8c6620e868b22c9f21eba3ff96ea37.png" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''graphic form''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,191" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="3a5877b2-043c-474a-9f69-03f67133c0ac" CvElementArea="307, 17, 22, 22" CvType="Icon" DesignTimeRectangle="310, 20, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='form' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='form' role='graphic' automationid='' /&gt;" Guid="357538f7-8740-4732-aa21-1d116ea0cf7d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB/SURBVDhPzdS7DcAgDEVRZmUYL8MyDEMPcoFEXow/CZFSXCkg3imTWmv9ZAkv3nYBa63bcCjd3cCc8zbEiKiXUmwQH2AT4/g9oiFwxfi8fodBD+YGvZgLjGAmGMVM0IPhRgX5PCEJkzYqaGHSRgU94eZ7EH8KVib4pC14ov+DA3txiLJs6hYkAAAAAElFTkSuQmCC" InformativeScreenshot="10c83f522bab77843b9b43684cbf06e8.png" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="输入信息 'ESC 关闭▲▼ 选择Ctrl+ ▲▼ 翻页↩…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,254" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Text="[CurrentWord + &quot;[k(Enter)]&quot;]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CVScreenId="e209d03a-e355-485d-8238-9019525dbe54" ContentHash="xF69193aGEODXjkCUYB3DQ" DesignTimeRectangle="350, 1765, 722, 59" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='在这里输入消息...' role='editable text' /&gt;" Guid="d854cee9-8eb4-400b-bddb-d60cd0df0ac4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAtYAAAA/CAYAAADExI+lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQJSURBVHhe7dzbahsxEAbgvv9L5W1CTiQhIRchBxe5bFCm0mplj1uXfh+IrGZGu3aufozxj+fn51297u7udvf39zsAAOB3JSuXzBxz9I96U4Zub293n5+f8TwAALDb7bPyzc3NPjs3g/Xj4+Pu+vp69/7+Hs8CAACVt7e3fXYuGfq3YF0+zi4NAABgrGTn+ish+2D99PS0/zj74+MjzgMAAA0lO5cMXbL0V7Au3w/xaTUAAMx5eHj4+q71PliXj7BfXl7iHAAAsKJk6OXrIPtgXT7Cfn19jXMAAMCKkqFLlv4K1ldXV34NBAAAJpVfBylZ+itYX15e+u1qAACYVDJ0ydLfgjUAADBPsAYAgARnF6wvLi5i6ZtRHwAA/oY/EqxnwnCZHc2P+hl6z9jy+s7Nv/Z6AQD+RWcXrIvR/Jb+zIpatWKp9861bJ1bxPm4b9Va+5kFAMDxUoN1DGyz69h71WejVq2I51qrN7vVzGwR59f2sder9czMAgDQlxqsWw4NboeeK1pnW7WiVT+m1jMzW8TwHPdxprbMb10AABzvpMG6F9p69UO07hWD42jFs1Gcb62RrXM99dnRfUb92swsAAB9ZxWsW0E17mu93tZaEevLvv4bZ6KsmSJjZnnW1gUAwPFOFqzXAttar4j9XgBs1YpWvVUr6vra9VoQbdWiZWZmdrnesnrnR2ZmAQDoO0mwjmEvhsDWiuejONuaWcR7j9bauaVez8TrutbSu9cWW+bjTHwPowUAwPH+SLCO1nrFWn9076LVb9WKLfXRde8ei9iP+yg+Y8vqnR+ZmQUAoC89WC9BbS2wrfWKtX4vTI4cM98LsVvfa+zHfdR6xpqsGQAADpcarLcGwrVe0erHgBr3sT67ol6/dd06v+j1evUiPmPL6p2tr1vPbNUAAJiXGqxra4FtrVe0AmHrTK/esmWuflbvNcR6/TeK87VeL9bivqV+Ha3XN9ofcgYAgO/OLljX4TAGxZZRf7F1btELm6379Gqteq01M9q31P+vVr2n9b7imdEeAIBfTh6sl/A4s+pzM+J9Zle81+i6V2vdryfOxnNxv9TiaokzcQEAkOfkwXpGPBOD4Ghlqu/Xe85abcYhZwAAOC8nC9YAAPA/EawBACCBYA0AAAkEawAASCBYAwBAAsEaAAASCNYAAJBAsAYAgASCNQAAJBCsAQAggWANAAAJBGsAAEggWAMAQALBGgAAEgjWAACQQLAGAIAEgjUAACQQrAEAIIFgDQAACQRrAABIIFgDAEACwRoAABII1gAAkECwBgCABII1AAAkEKwBACCBYA0AAAkEawAASCBYAwBAAsEaAAASCNYAAJBAsAYAgASCNQAAJBCsAQAggWANAAAJlmD9E3kHTtFfdqi7AAAAAElFTkSuQmCC" InformativeScreenshot="23e4388489a04baf3edf204a2453174a.png" Reference="bs-iXhSw2k-YhXge2Cel2A/F8P9cZgg9EmFEL5UrAuuGA" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Selector, Image" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="349, 1758, 724, 107" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl idx='114' role='grouping' /&gt;" Guid="a0c083a7-9b0e-4236-a658-38d6b2aa6e28" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <Delay DisplayName="延迟" Duration="00:00:15" sap:VirtualizedContainerService.HintSize="470,124" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,191" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" ContentHash="fSA6j4OcB0yEOzODUyEHsA" CvElementArea="374, 422, 19, 20" CvType="Icon" DesignTimeRectangle="373, 417, 22, 31" DesignTimeScaleFactor="1" Guid="9c5a72b1-7525-4760-b087-4b7cd864c5ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAfCAYAAADjuz3zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVEhL7dBBCsAgDERRT5v736DiJsiQsdNiu5B5kI3BD9qujzQ82MXh5HCi4YgoR1WGMYajoGFmtZs9DqvkMH7H3bdIYYzhVOQww3b/h+dnsssD25VhxC4PbHdweDUVKfyGw8nh5HDqqv018QhwrvsAAAAASUVORK5CYII=" InformativeScreenshot="04c98116e92cf3ea1942338c31e388d1.png" Reference="bs-iXhSw2k-YhXge2Cel2A/XXcvY2wsgUeL7kF6j7Frlw" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" CvElementArea="410, 422, 20, 20" CvType="Icon" DesignTimeRectangle="409, 421, 22, 23" ElementType="Icon" Guid="39d5bc51-4006-4944-a1ef-f0151cb60e0f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVEhL7ZTtDYAgDESdlmnYhmmYRnMkZ4hcCwb4Y3xJEz/gtVLhODdxPB+s4oPinHOJlFIJXI/giiEKIZwxxjtwj8A7D1NMkaqQCb0vkGIMxsQerF4hxRhsVUKYfFg8Wm2PRox1w9rO0ojfgiLUHyLFvfWtsfohxWyKmlDj9cMVe1BqJZdibmFrh1HqNVmKCeWULNnST5YeQjP84ptt4gs2M5OEuDKDbQAAAABJRU5ErkJggg==" SearchSteps="Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="从剪贴板获取" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                      <ui:GetFromClipboard.Result>
+                        <OutArgument x:TypeArguments="x:String">[MnemonicAndMeaning]</OutArgument>
+                      </ui:GetFromClipboard.Result>
+                    </ui:GetFromClipboard>
+                    <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="470,179" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[MnemonicAndMeaning]" />
+                    <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="470,116" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:String[]">[SplitParts]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:String[]">[MnemonicAndMeaning.Split(New String() {"|||"}, StringSplitOptions.None)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[SplitParts.Length&gt;= 2]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="470,706" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,283" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Mnemonic]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[SplitParts(0).Trim()]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Meaning]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[SplitParts(1).Trim()]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,283" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Mnemonic]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_7">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Meaning]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentWord, Mnemonic, Meaning}]" DataTable="[AnkiTable]" DisplayName="添加数据行" sap:VirtualizedContainerService.HintSize="470,217" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="1912, -857, 1096, 1888" ContentHash="S-PsGU90NUqRbd-S0m76gg" FilePath="D:\Program Files\Cherry Studio\cherry studio.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUPSURBVFhHxVfraxNZFC/7B634h9jE2jybzCQpfugDtYr6QY2PIggt+EGsFbQ0gtZA0YKL/aAVRRKrUKVo0VIaqa/iZvJoZzLvmd9ybppsZpJuorusBw6TzL1zfr/zuPee29XVQpBI7EEsdhA8n0U8DvD8z2n12yyzlUjsceM0CThuL2KxPxCLaejvrxn4d0o2yBbZJNsct9eNywQ83414vMQmu438V1p1qkRYTnAKeTxe/hmPbZ6HxXEwIxH2pP/uOQ4lDMKqpQTnzv0Gnp/v1PMaIFOehxGNQunrgzI8DDUahclxTd80aRVrnrAp77+D542mSS2UALVwGArHQQ4GGbDo80Gdm4MtSdBmZ6EFg+2jUFWDsLsQiyU68Z6M6qEQ1MuXYW5sQEmnIXi9ECcmUBN9cRFKINAZAcLkuAQV34tOck9GVb8f+rNndUA5k4Eliuy3JQiQjhyBHg53RqCK+aKrU3DKOYVfGhmB+flznQSJrWkQR0ch+3ysBmh+pyQoAs0DO1orMsqr4vOh4vNhe/9+lAYGYKyv1wlIN29iq6enWhd+fzVSoRDMaJTZcNtt1JYEiD15QvmUOA4SeTc1BfnGDWwnkxB6eyHEYjBWV6E+foyC14tyMAjx1CnI165BnpyElExCikahBoP1qLhxdiVAH8h+P6QLFxyeMrFt6CsrKB47hkIkgmIohNLRo9CXlwHLcswzPnyAdPo05EBgVxJNBChkzPOLF2GraiO0Q6xyGYXBQRQOH4ZVLDoHbbuqNE8UIZ49CyUYbJkOBwFiaEQiEPv7YW5uOo22kPL0NNQ3b9yvmdiGwYrTMgzoa2sQKWWRSHsCaiCAypUrTmumCWVxEerr1/VXtmminE6zZ6Noy8tQXr2CJcuwJAnm1hbMSgXS2Biz7U6DgwCFiJaSOj/vMCo9eIB8dzeKPh/Eq1ehLCygeOkSi0CjKJkM/jxwAHmvF9L9+7C2t2Hk84yEnE6zFeJOg5MAFR8RWFhwGN6amEBh3z6Ue3tRCIdRGBrCpseD7bt3HfPEmRkUPB6UenpQHh+Hmc/D+PqVkZBnZ9sToPDQeldmZhyGjU+fUEwmUTp/Hko2C3VlBeLcHEpTU4555vfvKA4OQohEID9/Dn1jA/rHj9C/fYM0OckI/GMKaFALhSCdPMmKqFEsVYUhCMyo+u4d1LdvUbx+HWa57JinvHwJYXQU+vo6tNVVaGtr7CmOjLTcppuWIa3XSiAA9eHDv63aNixFgVkoMALa+/csCsKJExBv327EZ8QpMjTOCORyqNy6hcrOhuTGayJADPVIhO1i2tOndcOWpsEsFmF8+cJIUJEV/H4UiOzSkoPEViqF8tgY5CdPUJmeZrsp2XR735KAgwSlY3wcajbLComq2iyVYOt6tTA9Hlac26mUg4B87x5KHg8q1KiEQmz9twLflUCNBOt2AgGUurshuSqe0iAMDEA4dAh6LucYY+fGzsnYrk1rexyTATpQxDNn6ttrTaxKBbaiON5RdKTjx1sWXJPuHMdtGxLyRAoGoWUyDrBWoj56xIq4VcG5wasNSQctGasJ6v8OHmQn4W6iLy1BjMfZ3LbeV+8KiY6b0lpDSoeKcucO6wttSoEkwcjlIKdS1ZUTDjftdrvoTlP6A2157bRkvQKlZXgY0tAQA6Zdjoq2reekjW35j15MCIA8pHbL6OtjWmu9OgJ3X0zqt6NfeTWryS+9nDbK/3k9/wsDkWFwlqwEXAAAAABJRU5ErkJggg==" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="c18247acd71e781a5c74ffa6192a3f1e.png" Reference="bs-iXhSw2k-YhXge2Cel2A/b2Wrm_h9L0-KulCCmvyixg" Selector="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' idx='*' /&gt;" Version="V2" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[AnkiTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="写入 CSV" Encoding="UTF-8" sap:VirtualizedContainerService.HintSize="574,268" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&quot;AnkiTable.csv&quot;)]" ShouldQuote="True" />
+  </Sequence>
+</Activity>
