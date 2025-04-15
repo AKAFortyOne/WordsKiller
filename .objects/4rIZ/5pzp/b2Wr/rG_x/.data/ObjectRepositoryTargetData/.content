@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="mBsPl0GhwUeujC-YNFIe_Q" Reference="bs-iXhSw2k-YhXge2Cel2A/rG_x0PcBdESlzDK-4hkQsw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="2a882b1c-610a-4381-a55e-01ae9d833b16" DesignTimeRectangle="369, 381, 384, 27" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl idx='77' role='grouping' /&gt;" Guid="1e9ca467-01a4-4ca3-8488-b06f29da76c6" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="fdd472788a946dea5c6505318fe39cc1.png" xmlns="">0_UFLe4XtE0eurufvXfrH6w</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">None</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

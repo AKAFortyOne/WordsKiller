@@ -132,7 +132,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1290,4599" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1256,5486" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="AnkiTable" />
@@ -144,16 +144,16 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" Buttons="YesNo" ChosenButton="[Mode]" DisplayName="消息框" sap:VirtualizedContainerService.HintSize="646,119" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;是否开启人工筛选模式？&quot;]" />
-    <ui:BuildDataTable DataTable="[AnkiTable]" DisplayName="构建数据表" sap:VirtualizedContainerService.HintSize="646,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Words&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Mnemonic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Meaning&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="读取 CSV" sap:VirtualizedContainerService.HintSize="646,172" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IgnoreQuotes="True" PathResource="[LocalResource.FromPath(&quot;cet4+6.csv&quot;)]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="对于数据表中的每一行" sap:VirtualizedContainerService.HintSize="646,3894" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" Buttons="YesNo" ChosenButton="[Mode]" DisplayName="消息框" sap:VirtualizedContainerService.HintSize="682,119" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;是否开启人工筛选模式？&quot;]" />
+    <ui:BuildDataTable DataTable="[AnkiTable]" DisplayName="构建数据表" sap:VirtualizedContainerService.HintSize="682,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Words&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Meaning&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;MnemonicEN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;MnemonicCN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="读取 CSV" sap:VirtualizedContainerService.HintSize="682,172" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IgnoreQuotes="True" PathResource="[LocalResource.FromPath(&quot;cet4+6.csv&quot;)]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="对于数据表中的每一行" sap:VirtualizedContainerService.HintSize="682,4781" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowWord" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="644,3710" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="680,4597" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="CurrentWord" />
               <Variable x:TypeArguments="x:String" Name="Button" />
@@ -163,15 +163,15 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="610,3650" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Equals(Button, &quot;No&quot;)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="646,4537" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="608,3527" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="644,4414" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="574,116" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="610,116" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[CurrentWord]</OutArgument>
                     </Assign.To>
@@ -179,31 +179,40 @@
                       <InArgument x:TypeArguments="x:String">[CurrentRowWord("Words").ToString()]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Cherry Studio" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="574,3351" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0fbd8341-4439-459f-a827-77057e030841" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Cherry Studio" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="610,4238" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0fbd8341-4439-459f-a827-77057e030841" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="540,3057" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="576,3944" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:Boolean" Name="Result" />
                             <Variable x:TypeArguments="x:String" Name="MnemonicAndMeaning" />
                             <Variable x:TypeArguments="s:String[]" Name="SplitParts" />
+                            <Variable x:TypeArguments="x:String" Name="MeaningAndMnemonicCN" />
+                            <Variable x:TypeArguments="x:String" Name="MnemonicEN" />
+                            <Variable x:TypeArguments="s:String[]" Name="SplitCNParts" />
                             <Variable x:TypeArguments="x:String" Name="Meaning" />
-                            <Variable x:TypeArguments="x:String" Name="Mnemonic" />
+                            <Variable x:TypeArguments="x:String" Name="MnemonicCN" />
                           </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 '&lt;&gt; RhF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="506,191" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 '&lt;&gt; RhF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="542,191" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
                             <uix:NClick.Target>
-                              <uix:TargetAnchorable CVScreenId="48ac2fe8-15e1-42d4-afc5-0bf502889d00" ContentHash="m-1FlbqfjUW5e3bWVua18g" DesignTimeRectangle="69, 57, 84, 38" DesignTimeScaleFactor="1" Guid="559f3feb-8e62-4685-b986-e100c1308208" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAmCAYAAABagbwLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVGhD7dJRCsMwDIPhXbP3P8hGHwpGxHbKJNMxfVDWzMkgP3u9jeqFX9h3HJTMQckclMxByRyUzEHJHJTMQckclMxByRyU7OeCHseBX7XOM/FRGg26exkMEM9lv4H7V2cnjAW9cznctxN05c5eltGg8bOCe+JZfCrdXGEkKF4M1wijxf3V++6jJA1aXaCbZevsfaWbK8iCdv+Iah5nuCd7X+nmCrKgEV4M1wjnWcTrHePvPCojQU/x8h3cE9fZ+0o3V3h0UPxX4Vlco26uMBb0tHPBLN41q9aomys8Lmgmnu2iV3O10aD/wEHJHJTMQckclMxByRyUzEHJHJTMQckclMxByRyU7APLurQNAcirpgAAAABJRU5ErkJggg==" InformativeScreenshot="df40cc424350795e9a5a909167ac4de2.png" Reference="bs-iXhSw2k-YhXge2Cel2A/I7AV2OYrA0uq5Uqz6NqtZg" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image" Version="V5" Visibility="Interactive" />
+                              <uix:TargetAnchorable ContentHash="0cHHIZ6Vskek-zCbw53S4A" DesignTimeRectangle="63, 50, 81, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='segmented control' role='grouping' /&gt;&lt;ctrl name='助手' role='grouping' /&gt;" Guid="48dcd296-4ab3-41b9-ad54-4f51d1e78704" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAmCAYAAAC1Q9c1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVGhD7dLRCsIwEETR/mb+/0MUH4QwZLsVHSfKPRBIuunLbY8bPu7QB3gfUQ2IakBUA6IaENWAqAZENSCqAVENiGpAVIMto44x9FHr8c68kmJRNcIcooqi91fv7iAatTrr7Mwrd79lu6j6B+o91c0TolF1zbNqf3UlRaNW52q/0s0TolF1zbPVfqWbJ0SjVufVXj/AlZXyM1Er3TwhHlX/Lo2kZ9XNEyJRq4DP2dlZdfOESNTKHKgLfzZP2yrqvyCqAVENiGpAVAOiGhDVgKgGRDUgqgFRDYhqQFSDO2zQfCbpKutsAAAAAElFTkSuQmCC" InformativeScreenshot="1f86f33e0b7f97d7bfa2b1ca95ade78e.png" Reference="bs-iXhSw2k-YhXge2Cel2A/I7AV2OYrA0uq5Uqz6NqtZg" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' idx='*' /&gt;" SearchSteps="Selector, Image" Version="V5" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="b867a332-f833-4950-a6bb-009d6e5d1c54" DesignTimeRectangle="147, 50, 82, 34" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='segmented control' role='grouping' /&gt;&lt;ctrl name='话题' role='grouping' /&gt;" Guid="1747ab6d-1490-43a0-8b2d-080b4c643403" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAmCAYAAAC1Q9c1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJESURBVGhD7ZrdisIwEEb7/u8oXuiNInghIl5IliOkG79O2rTadNfOwId0krQ7p7Np/prg9nFr1OH2vo2G+ng8wuVyCcfjMez3+7DdbsNms/kaEQ9xER9xEu9YK4Z6v9+fD+LBu90uHA6HcD6fw/V6/ToRF/ERJ/ESN/GXWhHU0+n0vDkP0j9gDSJu4odDifVC5e3wr8Ab0wetUcCFx1DWZqHebrdn/7LW7MwJHnCBT85MqLwJGn5rn/mu4AKfXMaaUElxz9B+xa7Asg5UOmPvQ8sEJ+vj9QKVdOYrp41decFLu4EXqIzHPEvHCV5wS62FyszBs3Sa4JbOvFqoTMlqZmnTNB2flkdZvrRMfdpubgEVfh2opHDtIVQfMK2r9fVay2qKkUDaBbRQGR5o5RqyYFi+6Ff1+WsqHV61UBnMasWllIOi/hSq5a8p+HWg1vxIaUZpllnK1Yt+67em4Lco1Khc8Dl/TgpzbPtP6F9C1QxVpe2s9nPrT0JVSAos1y691t+aMqEu8aFSqFqu/hSaAtfr2jI/VEsMqRSSlqd1tL7WyZXVkjmkYvBae7lPYeRklVv3SH36rDnFpMkc/DPNqtmvauB6rX4L5JD0XnOJ6b05TfUFlenKLqhgvvQ3Xr1Lf5gvUo/X4CI15tsp5SraTonmG3/DGrXxh8Utagdra9IWNeaHKWxNPkwRzY/9/IrshMNbx35SW/MBtXgCkPitj5JlRVCx9ChlBMwDa+9rzakYT5WjlKn5od9hGw3Vbdgc6gz2A0NnXJP5yX8MAAAAAElFTkSuQmCC" SearchSteps="Selector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''️单词记忆''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="506,191" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''️单词记忆''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="542,191" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable CVScreenId="deb958c2-1b37-4b42-8929-e6731242cabf" CvTextArea="106, 722, 55, 15" CvTextArgument="ÈAìììZłZ" CvType="Text" DesignTimeRectangle="107, 719, 52, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='️单词记忆' role='push button' /&gt;&lt;ctrl name='⭐ ️单词记忆' role='grouping' /&gt;&lt;ctrl role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='️单词记忆' role='push button' /&gt;&lt;ctrl name='⭐ ️单词记忆' role='grouping' /&gt;&lt;ctrl role='grouping' automationid='' check:text='️单词记忆' /&gt;" Guid="22a97fbf-f50b-4d1c-ae50-4762d27d9ea8" InformativeScreenshot="3a8c6620e868b22c9f21eba3ff96ea37.png" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.PointOffset>
@@ -212,24 +221,22 @@
                               </uix:TargetAnchorable>
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''graphic form''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="506,191" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''graphic form''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="542,191" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
                             <uix:NClick.Target>
-                              <uix:TargetAnchorable CVScreenId="3a5877b2-043c-474a-9f69-03f67133c0ac" CvElementArea="307, 17, 22, 22" CvType="Icon" DesignTimeRectangle="310, 20, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='form' role='graphic' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='form' role='graphic' automationid='' /&gt;" Guid="357538f7-8740-4732-aa21-1d116ea0cf7d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB/SURBVDhPzdS7DcAgDEVRZmUYL8MyDEMPcoFEXow/CZFSXCkg3imTWmv9ZAkv3nYBa63bcCjd3cCc8zbEiKiXUmwQH2AT4/g9oiFwxfi8fodBD+YGvZgLjGAmGMVM0IPhRgX5PCEJkzYqaGHSRgU94eZ7EH8KVib4pC14ov+DA3txiLJs6hYkAAAAAElFTkSuQmCC" InformativeScreenshot="10c83f522bab77843b9b43684cbf06e8.png" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                                <uix:TargetAnchorable.PointOffset>
-                                  <uix:PointOffset />
-                                </uix:TargetAnchorable.PointOffset>
-                              </uix:TargetAnchorable>
-                            </uix:NClick.Target>
-                          </uix:NClick>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="输入信息 'ESC 关闭▲▼ 选择Ctrl+ ▲▼ 翻页↩…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="506,254" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Text="[CurrentWord + &quot;[k(Enter)]&quot;]" Version="V4">
-                            <uix:NTypeInto.Target>
-                              <uix:TargetAnchorable CVScreenId="e209d03a-e355-485d-8238-9019525dbe54" ContentHash="xF69193aGEODXjkCUYB3DQ" DesignTimeRectangle="350, 1765, 722, 59" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='在这里输入消息...' role='editable text' /&gt;" Guid="d854cee9-8eb4-400b-bddb-d60cd0df0ac4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAtYAAAA/CAYAAADExI+lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQJSURBVHhe7dzbahsxEAbgvv9L5W1CTiQhIRchBxe5bFCm0mplj1uXfh+IrGZGu3aufozxj+fn51297u7udvf39zsAAOB3JSuXzBxz9I96U4Zub293n5+f8TwAALDb7bPyzc3NPjs3g/Xj4+Pu+vp69/7+Hs8CAACVt7e3fXYuGfq3YF0+zi4NAABgrGTn+ish+2D99PS0/zj74+MjzgMAAA0lO5cMXbL0V7Au3w/xaTUAAMx5eHj4+q71PliXj7BfXl7iHAAAsKJk6OXrIPtgXT7Cfn19jXMAAMCKkqFLlv4K1ldXV34NBAAAJpVfBylZ+itYX15e+u1qAACYVDJ0ydLfgjUAADBPsAYAgARnF6wvLi5i6ZtRHwAA/oY/EqxnwnCZHc2P+hl6z9jy+s7Nv/Z6AQD+RWcXrIvR/Jb+zIpatWKp9861bJ1bxPm4b9Va+5kFAMDxUoN1DGyz69h71WejVq2I51qrN7vVzGwR59f2sder9czMAgDQlxqsWw4NboeeK1pnW7WiVT+m1jMzW8TwHPdxprbMb10AABzvpMG6F9p69UO07hWD42jFs1Gcb62RrXM99dnRfUb92swsAAB9ZxWsW0E17mu93tZaEevLvv4bZ6KsmSJjZnnW1gUAwPFOFqzXAttar4j9XgBs1YpWvVUr6vra9VoQbdWiZWZmdrnesnrnR2ZmAQDoO0mwjmEvhsDWiuejONuaWcR7j9bauaVez8TrutbSu9cWW+bjTHwPowUAwPH+SLCO1nrFWn9076LVb9WKLfXRde8ei9iP+yg+Y8vqnR+ZmQUAoC89WC9BbS2wrfWKtX4vTI4cM98LsVvfa+zHfdR6xpqsGQAADpcarLcGwrVe0erHgBr3sT67ol6/dd06v+j1evUiPmPL6p2tr1vPbNUAAJiXGqxra4FtrVe0AmHrTK/esmWuflbvNcR6/TeK87VeL9bivqV+Ha3XN9ofcgYAgO/OLljX4TAGxZZRf7F1btELm6379Gqteq01M9q31P+vVr2n9b7imdEeAIBfTh6sl/A4s+pzM+J9Zle81+i6V2vdryfOxnNxv9TiaokzcQEAkOfkwXpGPBOD4Ghlqu/Xe85abcYhZwAAOC8nC9YAAPA/EawBACCBYA0AAAkEawAASCBYAwBAAsEaAAASCNYAAJBAsAYAgASCNQAAJBCsAQAggWANAAAJBGsAAEggWAMAQALBGgAAEgjWAACQQLAGAIAEgjUAACQQrAEAIIFgDQAACQRrAABIIFgDAEACwRoAABII1gAAkECwBgCABII1AAAkEKwBACCBYA0AAAkEawAASCBYAwBAAsEaAAASCNYAAJBAsAYAgASCNQAAJBCsAQAggWANAAAJlmD9E3kHTtFfdqi7AAAAAElFTkSuQmCC" InformativeScreenshot="23e4388489a04baf3edf204a2453174a.png" Reference="bs-iXhSw2k-YhXge2Cel2A/F8P9cZgg9EmFEL5UrAuuGA" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Selector, Image" Version="V5" Visibility="Interactive">
+                              <uix:TargetAnchorable CVScreenId="8570ffb5-a3af-48b4-b0a0-7dbcf74a3928" CvElementArea="293, 9, 21, 21" CvType="Icon" DesignTimeRectangle="295, 11, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl automationid='' role='graphic' /&gt;" Guid="e48b929c-c413-45dd-8b7a-c9823077e339" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC2SURBVEhL1ZTBDcMgDEUzFQOxAQzBMpwYgQ04MAr3VLbkynGMWihE6uFJyVf8ZGOUo7V27uCQwSqeE5dSzhjjENKhiq21U0jPRQzdah99AmqglmcXMYzVE+ecEZmTWB7J1+IQAiLzaXGtFcf03iPwDNnPYlqOMQbRljUl3tYxsfyMiW23ogfd/eF77Jx7L4yAjEtlTVfMx0op4TsHMl4jpV2xNtooqrjXxQi3v9sKKXATr+L/xC/UZLvAFYVvGwAAAABJRU5ErkJggg==" InformativeScreenshot="13bcf7486fe3cedd5cc8b6a92aa812e4.png" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' idx='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                    <uix:Target DesignTimeRectangle="349, 1758, 724, 107" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl idx='114' role='grouping' /&gt;" Guid="a0c083a7-9b0e-4236-a658-38d6b2aa6e28" SearchSteps="Selector" />
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="232, 50, 82, 34" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='segmented control' role='grouping' /&gt;&lt;ctrl name='设置' role='grouping' /&gt;" Guid="cf2363f7-ef5a-4ba6-8644-a733bed45857" SearchSteps="Selector" />
+                                    <uix:Target CVScreenId="8570ffb5-a3af-48b4-b0a0-7dbcf74a3928" DesignTimeRectangle="147, 50, 82, 34" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='segmented control' role='grouping' /&gt;&lt;ctrl name='话题' role='grouping' /&gt;" Guid="40ef7968-1f88-4ad4-9e3d-7bd966b5dcae" SearchSteps="Selector" />
+                                    <uix:Target DesignTimeRectangle="63, 50, 81, 34" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='segmented control' role='grouping' /&gt;&lt;ctrl name='助手' role='grouping' /&gt;" Guid="256945f4-359d-4214-95a5-8439858fcc2b" SearchSteps="Selector" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
                               </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="输入单词" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="542,254" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Text="[CurrentWord + &quot;[k(Enter)]&quot;]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable ContentHash="K2Zh16TiVEq9aa1ypmLlaw" DesignTimeRectangle="354, 757, 698, 48" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='在这里输入消息...' role='editable text' /&gt;" Guid="1a815167-de41-4ac1-9217-357c1bd3d95b" InformativeScreenshot="43c4f6627620733cc7d22b2b642f2c8c.png" Reference="bs-iXhSw2k-YhXge2Cel2A/F8P9cZgg9EmFEL5UrAuuGA" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' idx='*' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
                             </uix:NTypeInto.Target>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -238,24 +245,24 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <Delay DisplayName="延迟" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="506,124" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="506,191" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                          <Delay DisplayName="延迟" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="542,124" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="542,191" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
                             <uix:NClick.Target>
-                              <uix:TargetAnchorable CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" ContentHash="fSA6j4OcB0yEOzODUyEHsA" CvElementArea="374, 422, 19, 20" CvType="Icon" DesignTimeRectangle="373, 417, 22, 31" DesignTimeScaleFactor="1" Guid="9c5a72b1-7525-4760-b087-4b7cd864c5ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAfCAYAAADjuz3zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVEhL7dBBCsAgDERRT5v736DiJsiQsdNiu5B5kI3BD9qujzQ82MXh5HCi4YgoR1WGMYajoGFmtZs9DqvkMH7H3bdIYYzhVOQww3b/h+dnsssD25VhxC4PbHdweDUVKfyGw8nh5HDqqv018QhwrvsAAAAASUVORK5CYII=" InformativeScreenshot="04c98116e92cf3ea1942338c31e388d1.png" Reference="bs-iXhSw2k-YhXge2Cel2A/XXcvY2wsgUeL7kF6j7Frlw" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image, CV" Version="V5" Visibility="Interactive">
+                              <uix:TargetAnchorable CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" ContentHash="ouw_Dxp5WkKFMI5YggbtHw" CvElementArea="374, 422, 19, 20" CvType="Icon" DesignTimeRectangle="364, 441, 23, 35" DesignTimeScaleFactor="1" Guid="9c5a72b1-7525-4760-b087-4b7cd864c5ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAfCAYAAADjuz3zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVEhL7dBBCsAgDERRT5v736DiJsiQsdNiu5B5kI3BD9qujzQ82MXh5HCi4YgoR1WGMYajoGFmtZs9DqvkMH7H3bdIYYzhVOQww3b/h+dnsssD25VhxC4PbHdweDUVKfyGw8nh5HDqqv018QhwrvsAAAAASUVORK5CYII=" InformativeScreenshot="ab82dd39efa5ab02cf4c2675641715f2.png" Reference="bs-iXhSw2k-YhXge2Cel2A/XXcvY2wsgUeL7kF6j7Frlw" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image, CV" Version="V5" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                    <uix:Target CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" CvElementArea="410, 422, 20, 20" CvType="Icon" DesignTimeRectangle="409, 421, 22, 23" ElementType="Icon" Guid="39d5bc51-4006-4944-a1ef-f0151cb60e0f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVEhL7ZTtDYAgDESdlmnYhmmYRnMkZ4hcCwb4Y3xJEz/gtVLhODdxPB+s4oPinHOJlFIJXI/giiEKIZwxxjtwj8A7D1NMkaqQCb0vkGIMxsQerF4hxRhsVUKYfFg8Wm2PRox1w9rO0ojfgiLUHyLFvfWtsfohxWyKmlDj9cMVe1BqJZdibmFrh1HqNVmKCeWULNnST5YeQjP84ptt4gs2M5OEuDKDbQAAAABJRU5ErkJggg==" SearchSteps="Image, CV" />
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" CvElementArea="410, 422, 20, 20" CvType="Icon" DesignTimeRectangle="401, 448, 22, 23" ElementType="Icon" Guid="39d5bc51-4006-4944-a1ef-f0151cb60e0f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVEhL7ZTtDYAgDESdlmnYhmmYRnMkZ4hcCwb4Y3xJEz/gtVLhODdxPB+s4oPinHOJlFIJXI/giiEKIZwxxjtwj8A7D1NMkaqQCb0vkGIMxsQerF4hxRhsVUKYfFg8Wm2PRox1w9rO0ojfgiLUHyLFvfWtsfohxWyKmlDj9cMVe1BqJZdibmFrh1HqNVmKCeWULNnST5YeQjP84ptt4gs2M5OEuDKDbQAAAABJRU5ErkJggg==" SearchSteps="Image, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
                               </uix:TargetAnchorable>
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="从剪贴板获取" sap:VirtualizedContainerService.HintSize="506,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                          <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="从剪贴板获取" sap:VirtualizedContainerService.HintSize="542,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
                             <ui:GetFromClipboard.Result>
                               <OutArgument x:TypeArguments="x:String">[MnemonicAndMeaning]</OutArgument>
                             </ui:GetFromClipboard.Result>
                           </ui:GetFromClipboard>
-                          <If Condition="[Equals(Mode, &quot;Yes&quot;)]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="506,477" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If Condition="[Equals(Mode, &quot;Yes&quot;)]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="542,477" sap2010:WorkflowViewState.IdRef="If_4">
                             <If.Then>
                               <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,170" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                 <Sequence.Variables>
@@ -287,9 +294,9 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <If Condition="[Equals(Button, &quot;Yes&quot;)]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="506,1319" sap2010:WorkflowViewState.IdRef="If_3">
+                          <If Condition="[Equals(Button, &quot;Yes&quot;)]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="542,2206" sap2010:WorkflowViewState.IdRef="If_3">
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="504,1097" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="540,1982" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Name="Equals" />
                                 </Sequence.Variables>
@@ -298,7 +305,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="470,116" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="506,116" sap2010:WorkflowViewState.IdRef="Assign_3">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="s:String[]">[SplitParts]</OutArgument>
                                   </Assign.To>
@@ -306,52 +313,106 @@
                                     <InArgument x:TypeArguments="s:String[]">[MnemonicAndMeaning.Split(New String() {"|||"}, StringSplitOptions.None)]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <If Condition="[SplitParts.Length&gt;= 2]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="470,706" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If Condition="[SplitParts.Length&gt;= 2]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="506,1412" sap2010:WorkflowViewState.IdRef="If_1">
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,283" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="504,1105" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="470,116" sap2010:WorkflowViewState.IdRef="Assign_4">
                                         <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[Mnemonic]</OutArgument>
+                                          <OutArgument x:TypeArguments="x:String">[MnemonicEN]</OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
                                           <InArgument x:TypeArguments="x:String">[SplitParts(0).Trim()]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="470,116" sap2010:WorkflowViewState.IdRef="Assign_5">
                                         <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[Meaning]</OutArgument>
+                                          <OutArgument x:TypeArguments="x:String">[MeaningAndMnemonicCN]</OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
                                           <InArgument x:TypeArguments="x:String">[SplitParts(1).Trim()]</InArgument>
                                         </Assign.Value>
                                       </Assign>
+                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="470,116" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="s:String[]">[SplitCNParts]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="s:String[]">[MeaningAndMnemonicCN.Split(New String() { Environment.NewLine }, StringSplitOptions.None)]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <If Condition="[SplitCNParts.Length&gt;= 2]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="470,697" sap2010:WorkflowViewState.IdRef="If_5">
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,283" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[Meaning]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[SplitCNParts(0).Trim()]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[MnemonicCN]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[SplitCNParts(1).Trim()]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,283" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[MnemonicCN]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">
+                                                  <Literal x:TypeArguments="x:String" Value="" />
+                                                </InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[Meaning]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">
+                                                  <Literal x:TypeArguments="x:String" Value="" />
+                                                </InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,283" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="504,167" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="470,107" sap2010:WorkflowViewState.IdRef="Assign_6">
                                         <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[Mnemonic]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <Literal x:TypeArguments="x:String" Value="" />
-                                          </InArgument>
-                                        </Assign.Value>
-                                      </Assign>
-                                      <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_7">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[Meaning]</OutArgument>
+                                          <OutArgument x:TypeArguments="x:String">[MnemonicEN]</OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
                                           <InArgument x:TypeArguments="x:String">
@@ -362,11 +423,12 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentWord, Mnemonic, Meaning}]" DataTable="[AnkiTable]" DisplayName="添加数据行" sap:VirtualizedContainerService.HintSize="470,215" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="506,179" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[CurrentWord + Meaning + MnemonicEN + MnemonicCN]" />
+                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentWord, Meaning, MnemonicEN, MnemonicCN}]" DataTable="[AnkiTable]" DisplayName="添加数据行" sap:VirtualizedContainerService.HintSize="506,215" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="504,91" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="540,91" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -384,14 +446,11 @@
                   </uix:NApplicationCard>
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
-              <ui:InterruptibleDoWhile.Condition>
-                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Equals(Button, &quot;No&quot;)" />
-              </ui:InterruptibleDoWhile.Condition>
             </ui:InterruptibleDoWhile>
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="False" CsvAction="Append" DataTable="[AnkiTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="写入 CSV" Encoding="UTF-8" sap:VirtualizedContainerService.HintSize="646,268" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&quot;AnkiTable.csv&quot;)]" ShouldQuote="True" />
+    <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="False" CsvAction="Append" DataTable="[AnkiTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="写入 CSV" Encoding="UTF-8" sap:VirtualizedContainerService.HintSize="682,268" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&quot;AnkiTable.csv&quot;)]" ShouldQuote="True" />
   </Sequence>
 </Activity>
