@@ -39,6 +39,10 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.CSV</x:String>
       <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -98,9 +102,12 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CsvToAnki" sap:VirtualizedContainerService.HintSize="1256,934" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CsvToAnki" sap:VirtualizedContainerService.HintSize="1256,873" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="statusCode" />
       <Variable x:TypeArguments="x:String" Name="apiResponse" />
@@ -113,16 +120,16 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[InputAnkiTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="读取 CSV" sap:VirtualizedContainerService.HintSize="470,172" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" PathResource="[LocalResource.FromPath(&quot;AnkiTable.csv&quot;)]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[InputAnkiTable]" DisplayName="对于数据表中的每一行" sap:VirtualizedContainerService.HintSize="470,739" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[InputAnkiTable]" DisplayName="对于数据表中的每一行" sap:VirtualizedContainerService.HintSize="470,678" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="468,564" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="468,503" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="InputDataTable" />
-              <Variable x:TypeArguments="x:String" Name="MnemonicEN" />
+              <Variable x:TypeArguments="x:String" Name="Mnemonic" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -131,10 +138,18 @@
             </sap:WorkflowViewStateService.ViewState>
             <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[MnemonicEN]</OutArgument>
+                <OutArgument x:TypeArguments="x:String">[Mnemonic]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[row("MnemonicEN").ToString().Replace("""", "\""")]</InArgument>
+                <InArgument x:TypeArguments="x:String">[row("Mnemonic").ToString().Replace("""", "\""")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Mnemonic]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Mnemonic.Replace("**", "'")]</InArgument>
               </Assign.Value>
             </Assign>
             <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -142,10 +157,10 @@
                 <OutArgument x:TypeArguments="x:String">[jsonPayload]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">["{""action"": ""addNote"", ""version"": 6, ""params"": {""note"": {""deckName"": ""Cet4+6"", ""modelName"": ""ThirdBasic"", ""fields"": {""Word"": """ + row("Words").ToString().Replace("""", "\""") + """, ""Mnemonic"": """ + row("MnemonicEN").ToString().Replace("""", "\""") + """, ""Meaning"": """ + row("Meaning").ToString().Replace("""", "\""") + """}, ""options"": {""allowDuplicate"": false}, ""tags"": [" + (If(row.Table.Columns.Contains("Tags") AndAlso Not String.IsNullOrWhiteSpace(row("Tags").ToString()), String.Join(",", row("Tags").ToString().Split({";"c, ","c}).Select(Function(tag) """" + tag.Trim().Replace("""", "\""") + """").ToArray()), "")) + "]}}}"]</InArgument>
+                <InArgument x:TypeArguments="x:String">["{""action"": ""addNote"", ""version"": 6, ""params"": {""note"": {""deckName"": ""Cet4+6"", ""modelName"": ""ThirdBasic"", ""fields"": {""Word"": """ + row("Words").ToString().Replace("""", "\""") + """, ""Mnemonic"": """ + Mnemonic + """, ""Meaning"": """ + row("Meaning").ToString().Replace("""", "\""") + """}, ""options"": {""allowDuplicate"": true}, ""tags"": [" + (If(row.Table.Columns.Contains("Tags") AndAlso Not String.IsNullOrWhiteSpace(row("Tags").ToString()), String.Join(",", row("Tags").ToString().Split({";"c, ","c}).Select(Function(tag) """" + tag.Trim().Replace("""", "\""") + """").ToArray()), "")) + "]}}}"]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[jsonPayload]" BodyFormat="application/json" DisplayName="HTTP 请求" EnableSSLVerification="True" EndPoint="http://localhost:8765" sap:VirtualizedContainerService.HintSize="434,104" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[apiResponse]" StatusCode="[statusCode]" TimeoutMS="6000">
+            <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[jsonPayload]" BodyFormat="application/json" DisplayName="HTTP 请求" EnableSSLVerification="False" EndPoint="http://localhost:8765" sap:VirtualizedContainerService.HintSize="434,95" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[apiResponse]" StatusCode="[statusCode]" TimeoutMS="6000">
               <ui:HttpClient.Attachments>
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </ui:HttpClient.Attachments>
@@ -162,7 +177,6 @@
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </ui:HttpClient.UrlSegments>
             </ui:HttpClient>
-            <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[jsonPayload]" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>

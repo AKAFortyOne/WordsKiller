@@ -4,6 +4,8 @@
   "description": "自动化生成四六级单词助记句并导入到Anki",
   "main": "WordToMnemonic.xaml",
   "dependencies": {
+    "Newtonsoft.Json": "[13.0.3]",
+    "System.Net.Http.Json": "[10.0.0-preview.3.25171.5]",
     "UiPath.Excel.Activities": "[3.0.0-preview]",
     "UiPath.System.Activities": "[25.2.4]",
     "UiPath.UIAutomation.Activities": "[25.2.1-preview]",

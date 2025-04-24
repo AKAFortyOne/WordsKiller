@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ybE3O-aiRkeznD489DmJAA" Reference="bs-iXhSw2k-YhXge2Cel2A/SxLYS1how0GlFmvjCM5xOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="07fa63e8-c553-48bb-92dd-12aaf50ed9ae" CvElementArea="70, 653, 255, 39" CvType="InputBox" DesignTimeRectangle="112, 662, 97, 21" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='单词记忆_英译中' role='grouping' /&gt;&lt;ctrl role='grouping' automationid='' check:text='️单词记忆_英译中' /&gt;" Guid="4bffd904-fedc-4423-84e6-79c3898800f2" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' idx='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="07fa63e8-c553-48bb-92dd-12aaf50ed9ae" CvElementArea="68, 57, 88, 38" CvType="Button" DesignTimeRectangle="71, 59, 81, 34" FullSelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='segmented control' role='grouping' /&gt;&lt;ctrl name='助手' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cherry Studio' role='document' /&gt;&lt;ctrl name='segmented control' role='grouping' /&gt;&lt;ctrl name='助手' role='grouping' automationid='' check:text='助手' /&gt;" Guid="009a2284-38ae-4b12-9090-4e54be2d553c" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="36bd98c93bebf3559e5d1569f5c8dd8d.png" xmlns="">0YN9gMF9j6ESb5soJKNvBZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
