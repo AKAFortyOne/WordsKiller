@@ -72,60 +72,61 @@
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -133,7 +134,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1269,4884" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1267,5316" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="AnkiTable" />
@@ -147,23 +148,28 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" Buttons="YesNo" ChosenButton="[Mode]" DisplayName="消息框" sap:VirtualizedContainerService.HintSize="682,119" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;是否开启人工筛选模式？&quot;]" />
-    <ui:BuildDataTable DataTable="[AnkiTable]" DisplayName="构建数据表" sap:VirtualizedContainerService.HintSize="682,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Words&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Meaning&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Mnemonic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
     <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="读取 CSV" sap:VirtualizedContainerService.HintSize="682,172" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IgnoreQuotes="True" PathResource="[LocalResource.FromPath(&quot;cet4+6.csv&quot;)]" />
-    <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="682,4179" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch 异常处理" sap:VirtualizedContainerService.HintSize="682,4971" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="IsShouldStop" />
+      </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence DisplayName="尝试" sap:VirtualizedContainerService.HintSize="680,3744" sap2010:WorkflowViewState.IdRef="Sequence_23">
+        <Sequence DisplayName="尝试" sap:VirtualizedContainerService.HintSize="680,4545" sap2010:WorkflowViewState.IdRef="Sequence_23">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Boolean" Default="False" Name="CheckResult" />
+          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="对于数据表中的每一行" sap:VirtualizedContainerService.HintSize="646,3684" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="对于数据表中的每一行" sap:VirtualizedContainerService.HintSize="646,4485" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowWord" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="644,3509" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="644,4310" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="Button" />
                   </Sequence.Variables>
@@ -172,14 +178,15 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Equals(Button, &quot;No&quot;)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="610,3449" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Equals(Button, &quot;No&quot;)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="610,4250" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                     <ui:InterruptibleDoWhile.Body>
-                      <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="608,3326" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="608,4127" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
+                        <ui:BuildDataTable DataTable="[AnkiTable]" DisplayName="构建数据表" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Words&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Meaning&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Mnemonic&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
                         <Assign DisplayName="分配" sap:VirtualizedContainerService.HintSize="574,116" sap2010:WorkflowViewState.IdRef="Assign_2">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[CurrentWord]</OutArgument>
@@ -188,13 +195,13 @@
                             <InArgument x:TypeArguments="x:String">[CurrentRowWord("Words").ToString()]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Cherry Studio" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="574,3150" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0fbd8341-4439-459f-a827-77057e030841" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Cherry Studio" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="574,3859" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0fbd8341-4439-459f-a827-77057e030841" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="540,2856" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <Sequence DisplayName="执行" sap:VirtualizedContainerService.HintSize="540,3565" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Name="Result" />
                                   <Variable x:TypeArguments="x:String" Name="MnemonicAndMeaning" />
@@ -231,7 +238,29 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NTypeInto>
-                                <Delay DisplayName="延迟" Duration="00:00:15" sap:VirtualizedContainerService.HintSize="506,124" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Not CheckResult]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="506,553" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                                  <ui:InterruptibleDoWhile.Body>
+                                    <Sequence DisplayName="正文" sap:VirtualizedContainerService.HintSize="416,421" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="检查元素 'graphic'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,191" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[CheckResult]" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                                        <uix:NCheckElement.Target>
+                                          <uix:TargetAnchorable CVScreenId="bad6c81f-1ef6-4506-9d01-40d0b3f2c6d5" ContentHash="Aba24QnANkSxBZj04slawA" CvElementArea="365, 420, 21, 21" CvType="Icon" DesignTimeRectangle="366, 419, 20, 21" DesignTimeScaleFactor="1" ElementType="Icon" Guid="849002c4-252c-452e-b79a-05f1d8469691" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACXSURBVDhPtZO7DcAgDAUzLVswFWvAAOxBQ0X0CiPiGEhkc5KL4KfjI+dqxlx8Qct5Yc65hRDEQm/HQ+ic+1QruhC7I7w7xW+hlqWw1tpSSi3GKBZ6yIxMhQh671/vxwuZUToVYnd8l1L6Ggc9ZJAlpkJciT+BBDLIEueE1CTMhCQxEQIabDMhYS5Ujw1HPdgSql/PCnPhDV0qBlLoQAetAAAAAElFTkSuQmCC" InformativeScreenshot="0dd4f8228181f8500597100ac401e59c.png" Reference="bs-iXhSw2k-YhXge2Cel2A/dylM0nQgrEy6XbwL81elYg" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="CV" Version="V5" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="bad6c81f-1ef6-4506-9d01-40d0b3f2c6d5" CvElementArea="402, 420, 20, 20" CvType="Icon" DesignTimeRectangle="400, 417, 24, 25" ElementType="Icon" Guid="71110f23-49be-481e-9ff5-0a7ea4bb46d5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADJSURBVEhL7ZTBCcQgEEXTjh2kBC+2kWrSjdVYjeEv/GUi3xEXA3vIgzmocZ46mq0+zNZ2rOYVDPkPQSml5pxvgT47btuWoQDJjuOo53l+A20ExgD7Fa6AE5nIghVT9JOAK+/BY4sx1n3f5wVI3jtXwNUjIEgptZ98kAJufwVS4J2pYvoWeRMULLRCCmbx6iUFKFgI4VbIHqN6SQG2i5uBK9i+WguTq3dCugL1Yi32hXu4AsBETDYSt0iBukXez85DClbyCoY8LrgAwI7ioI3+n9AAAAAASUVORK5CYII=" SearchSteps="CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NCheckElement.Target>
+                                      </uix:NCheckElement>
+                                      <ui:LogMessage DisplayName="日志消息" sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[CheckResult]" />
+                                    </Sequence>
+                                  </ui:InterruptibleDoWhile.Body>
+                                </ui:InterruptibleDoWhile>
                                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="单击 ''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="506,191" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable CVScreenId="204e464c-b384-4b3b-92cf-9dc18e042477" ContentHash="ouw_Dxp5WkKFMI5YggbtHw" CvElementArea="374, 422, 19, 20" CvType="Icon" DesignTimeRectangle="364, 441, 23, 35" DesignTimeScaleFactor="1" Guid="9c5a72b1-7525-4760-b087-4b7cd864c5ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAfCAYAAADjuz3zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVEhL7dBBCsAgDERRT5v736DiJsiQsdNiu5B5kI3BD9qujzQ82MXh5HCi4YgoR1WGMYajoGFmtZs9DqvkMH7H3bdIYYzhVOQww3b/h+dnsssD25VhxC4PbHdweDUVKfyGw8nh5HDqqv018QhwrvsAAAAASUVORK5CYII=" InformativeScreenshot="ab82dd39efa5ab02cf4c2675641715f2.png" Reference="bs-iXhSw2k-YhXge2Cel2A/XXcvY2wsgUeL7kF6j7Frlw" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="Image, CV" Version="V5" Visibility="Interactive">
@@ -280,7 +309,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <If Condition="[Equals(Button, &quot;Yes&quot;)]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="506,1500" sap2010:WorkflowViewState.IdRef="If_3">
+                                <If Condition="[Equals(Button, &quot;Yes&quot;)]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="506,1507" sap2010:WorkflowViewState.IdRef="If_3">
                                   <If.Then>
                                     <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="504,1276" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                       <Sequence.Variables>
@@ -369,6 +398,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
+                                <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="False" CsvAction="Append" DataTable="[AnkiTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="写入 CSV" Encoding="UTF-8" sap:VirtualizedContainerService.HintSize="506,273" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&quot;AnkiTable.csv&quot;)]" ShouldQuote="True" />
                               </Sequence>
                             </ActivityAction>
                           </uix:NApplicationCard.Body>
@@ -412,6 +442,5 @@
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="False" CsvAction="Append" DataTable="[AnkiTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="写入 CSV" Encoding="UTF-8" sap:VirtualizedContainerService.HintSize="682,268" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&quot;AnkiTable.csv&quot;)]" ShouldQuote="True" />
   </Sequence>
 </Activity>

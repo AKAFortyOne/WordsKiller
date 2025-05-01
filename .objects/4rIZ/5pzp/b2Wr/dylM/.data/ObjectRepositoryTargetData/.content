@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Aba24QnANkSxBZj04slawA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="bad6c81f-1ef6-4506-9d01-40d0b3f2c6d5" CvElementArea="365, 420, 21, 21" CvType="Icon" DesignTimeRectangle="366, 419, 20, 21" DesignTimeScaleFactor="1" ElementType="Icon" Guid="849002c4-252c-452e-b79a-05f1d8469691" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACXSURBVDhPtZO7DcAgDAUzLVswFWvAAOxBQ0X0CiPiGEhkc5KL4KfjI+dqxlx8Qct5Yc65hRDEQm/HQ+ic+1QruhC7I7w7xW+hlqWw1tpSSi3GKBZ6yIxMhQh671/vxwuZUToVYnd8l1L6Ggc9ZJAlpkJciT+BBDLIEueE1CTMhCQxEQIabDMhYS5Ujw1HPdgSql/PCnPhDV0qBlLoQAetAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bad6c81f-1ef6-4506-9d01-40d0b3f2c6d5" CvElementArea="402, 420, 20, 20" CvType="Icon" DesignTimeRectangle="400, 417, 24, 25" ElementType="Icon" Guid="71110f23-49be-481e-9ff5-0a7ea4bb46d5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADJSURBVEhL7ZTBCcQgEEXTjh2kBC+2kWrSjdVYjeEv/GUi3xEXA3vIgzmocZ46mq0+zNZ2rOYVDPkPQSml5pxvgT47btuWoQDJjuOo53l+A20ExgD7Fa6AE5nIghVT9JOAK+/BY4sx1n3f5wVI3jtXwNUjIEgptZ98kAJufwVS4J2pYvoWeRMULLRCCmbx6iUFKFgI4VbIHqN6SQG2i5uBK9i+WguTq3dCugL1Yi32hXu4AsBETDYSt0iBukXez85DClbyCoY8LrgAwI7ioI3+n9AAAAAASUVORK5CYII=" SearchSteps="CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0dd4f8228181f8500597100ac401e59c.png" xmlns="">0gkWIlMfF9EGg4vFPchKLkg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
