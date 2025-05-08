@@ -134,7 +134,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1267,5316" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1262,5316" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="AnkiTable" />
@@ -246,7 +246,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="检查元素 'graphic'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,191" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[CheckResult]" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Version="V4">
+                                      <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="检查元素 'graphic'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,191" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[CheckResult]" ScopeIdentifier="0fbd8341-4439-459f-a827-77057e030841" Timeout="120" Version="V4">
                                         <uix:NCheckElement.Target>
                                           <uix:TargetAnchorable CVScreenId="bad6c81f-1ef6-4506-9d01-40d0b3f2c6d5" ContentHash="Aba24QnANkSxBZj04slawA" CvElementArea="365, 420, 21, 21" CvType="Icon" DesignTimeRectangle="366, 419, 20, 21" DesignTimeScaleFactor="1" ElementType="Icon" Guid="849002c4-252c-452e-b79a-05f1d8469691" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACXSURBVDhPtZO7DcAgDAUzLVswFWvAAOxBQ0X0CiPiGEhkc5KL4KfjI+dqxlx8Qct5Yc65hRDEQm/HQ+ic+1QruhC7I7w7xW+hlqWw1tpSSi3GKBZ6yIxMhQh671/vxwuZUToVYnd8l1L6Ggc9ZJAlpkJciT+BBDLIEueE1CTMhCQxEQIabDMhYS5Ujw1HPdgSql/PCnPhDV0qBlLoQAetAAAAAElFTkSuQmCC" InformativeScreenshot="0dd4f8228181f8500597100ac401e59c.png" Reference="bs-iXhSw2k-YhXge2Cel2A/dylM0nQgrEy6XbwL81elYg" ScopeSelectorArgument="&lt;wnd app='cherry studio.exe' cls='Chrome_WidgetWin_1' title='Cherry Studio' /&gt;" SearchSteps="CV" Version="V5" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
@@ -427,7 +427,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="消息框" sap:VirtualizedContainerService.HintSize="646,110" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Current Word is:&quot; + CurrentWord + &quot;, and the word is not write into csv.&quot;]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="消息框" sap:VirtualizedContainerService.HintSize="646,110" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Current Word is:&quot; + CurrentWord + &quot;, and the word is not write into csv.&quot; + &quot;The error is: &quot; + exception.ToString]" />
             </Sequence>
           </ActivityAction>
         </Catch>
